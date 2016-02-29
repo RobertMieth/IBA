@@ -25,8 +25,12 @@ class GoogleGrabber():
 		self.redirect_uri='urn:ietf:wg:oauth:2.0:oob'
 		self.scope = 'https://spreadsheets.google.com/feeds https://docs.google.com/feeds'
 		self.credentials = self.storage.get()
-		sysJson = open("system\sysdata.json")
-		self.sysData = json.load(sysJson)
+		self.sysJson = open("system\sysdata.json")
+		self.sysData = json.load(self.sysJson)
+		
+		#Data Storage
+		self.session_planungsdaten = []
+		
 	
 	def get_planungsdaten(self):
 		self.get_credentials()
@@ -37,9 +41,9 @@ class GoogleGrabber():
 		wks = act_sh.sheet1
 		
 		planungsdaten = wks.get_all_records(empty2zero=True, head=2)
-		planungsdaten.pop(0)
-		planungsdaten.pop(0)
+		planungsdaten = self.clean_data(planungsdaten)
 		
+		self.session_planungsdaten = planungsdaten
 		return planungsdaten
 		
 	def get_credentials(self):
@@ -61,7 +65,32 @@ class GoogleGrabber():
 		print('Obtained new Google Credential')
 		
 		return credentials    
-  
+		
+	def clean_data(self, sheetData):
+		sheetData.pop(0)
+		sheetData.pop(0)
+		remove = []
+		for s in sheetData:
+			if s['Datum Installation']==0:
+				remove.append(sheetData.index(s))
+		
+		for rem in sorted(remove, reverse=True):
+			del sheetData[rem]
+		
+		return sheetData
+		
+#Read and write Data from Excel files
+class ExcelHandler():
+	#TODO
+	def __init__(self):
+		self.sysJson = open("system\sysdata.json", 'r+')
+		self.sysData = json.load(self.sysJson)
+		self.test_json()
+		
+	def test_json(self):
+		self.sysData["mstXLS"] = "pfad"
+		json.dump(self.sysData, self.sysJson)
+
 		
 #GUI App
 class IbaTK(tk.Frame):
@@ -70,6 +99,12 @@ class IbaTK(tk.Frame):
 		tk.Frame.__init__(self, parent, background = "white")
 		self.parent = parent
 		self.version = "(C) Solandeo - Version 2016-02-16.2.0a"
+		
+		sysJson = open("system\sysdata.json")
+		self.sysData = json.load(sysJson)
+		
+		self.google = GoogleGrabber()
+		self.excel = ExcelHandler()
 		
 		self.build()	
 		
@@ -133,14 +168,11 @@ class IbaTK(tk.Frame):
 	
 	def load_data(self):
 		#Loads Data of currently planned Installations
-		google = GoogleGrabber()
-		planungsdaten = google.get_planungsdaten()
+		planungsdaten = self.google.get_planungsdaten()
 		self.guiListe.delete(0,'end')
 		for d in planungsdaten:
-			if d['Datum Installation']!=0:
-				if self.is_date(str(d['Datum Installation'])):
-					addStr = str(d['Datum Installation']) + " - " + str(d['Nummer MST/STST']) + " - " + str(d['Name'])
-					self.guiListe.insert('end', addStr)
+			addStr = str(d['Datum Installation']) + " - " + str(d['Nummer MST/STST']) + " - " + str(d['Name'])
+			self.guiListe.insert('end', addStr)
 		self.get_to_front()
 		
 	def is_date(self, dateStr):
@@ -156,7 +188,10 @@ class IbaTK(tk.Frame):
 		
 	def process_data(self):
 		#Processes the gathered Data
-		print("TODO")
+		auswahl = map(int, self.guiListe.curselection())
+		planungsdaten = self.google.session_planungsdaten
+		for a in auswahl:
+			print(planungsdaten[a]['Nummer MST/STST'])
 	
 	def find_path(self):
 		#Dialog zur Einstellung der Excel Dateien
