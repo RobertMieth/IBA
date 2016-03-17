@@ -4,6 +4,8 @@
 import tkinter as tk
 from PIL import Image, ImageTk
 
+import openpyxl as pxl
+
 from oauth2client import tools
 from oauth2client.client import flow_from_clientsecrets
 from oauth2client.file import Storage
@@ -25,6 +27,7 @@ class GoogleGrabber():
 		self.redirect_uri='urn:ietf:wg:oauth:2.0:oob'
 		self.scope = 'https://spreadsheets.google.com/feeds https://docs.google.com/feeds'
 		self.credentials = self.storage.get()
+		
 		self.sysJson = open("system\sysdata.json")
 		self.sysData = json.load(self.sysJson)
 		
@@ -83,13 +86,67 @@ class GoogleGrabber():
 class ExcelHandler():
 	#TODO
 	def __init__(self):
-		self.sysJson = open("system\sysdata.json", 'r+')
+		self.sysJson = open("system\sysdata.json", 'r')
 		self.sysData = json.load(self.sysJson)
-		self.test_json()
 		
-	def test_json(self):
-		self.sysData["mstXLS"] = "pfad"
-		json.dump(self.sysData, self.sysJson)
+		self.get_data_paths()
+		
+	def get_data_paths(self):
+		dataXl = pxl.load_workbook(filename = "system\was_liegt_wo.xlsx")
+		dataWs = dataXl.get_sheet_by_name("Main")
+		
+		self.evaPath = dataWs['C3'].value
+		self.mstPath = dataWs['D3'].value
+		self.ststPath = dataWs['E3'].value
+		self.komplexPath = dataWs['F3'].value
+		self.vnbPath = dataWs['G3'].value
+		
+		ident = dataWs['A4:A60']
+		
+		#evaDict
+		evaCol = dataWs['C4:C60']
+		evaDict = self.range2dict(ident,evaCol)
+		
+		#mstDict
+		mstCol = dataWs['D4:D60']
+		mstDict = self.range2dict(ident,mstCol)
+		
+		#ststDict
+		ststCol = dataWs['E4:E60']
+		ststDict = self.range2dict(ident,ststCol)
+		
+		#komplexDict
+		kompexCol = dataWs['F4:F60']
+		komplexDict = self.range2dict(ident,kompexCol)
+		
+		#vnbDict
+		vnbCol = dataWs['G4:G60']
+		vnbDict = self.range2dict(ident,vnbCol)
+		
+		#isDbDict
+		isDbCol = dataWs['H4:H60']
+		isDbDict = self.range2dict(ident,isDbCol)
+
+		
+	def range2dict(self, range1, range2):
+		range1List = []
+		for r1 in range1:
+			for cell in r1:
+				range1List.append(cell.value)
+				
+		range2List = []
+		for r2 in range2:
+			for cell in r2:
+				range2List.append(cell.value)
+				
+		return dict(zip(range1List,range2List))
+		
+		
+		
+	#def update_sysdata(self, param, new_value):
+	#	self.sysData[param] = new_value
+	#	with open("system\sysdata2.json", 'w') as f:
+	#		json.dump(self.sysData, f)	
 
 		
 #GUI App
@@ -100,7 +157,7 @@ class IbaTK(tk.Frame):
 		self.parent = parent
 		self.version = "(C) Solandeo - Version 2016-02-16.2.0a"
 		
-		sysJson = open("system\sysdata.json")
+		sysJson = open("system\sysdata.json",'r')
 		self.sysData = json.load(sysJson)
 		
 		self.google = GoogleGrabber()
@@ -119,7 +176,7 @@ class IbaTK(tk.Frame):
 		self.parent.config(menu=menubar)
 		
 		sysMenu = tk.Menu(self.parent)
-		sysMenu.add_command(label="Dateipfade", command=self.find_path)
+		sysMenu.add_command(label="Einstellungen", command=self.find_path)
 		menubar.add_cascade(label="System", menu=sysMenu)
 		
 		helpMenu = tk.Menu(self.parent)
@@ -196,6 +253,7 @@ class IbaTK(tk.Frame):
 	def find_path(self):
 		#Dialog zur Einstellung der Excel Dateien
 		print("TODO")
+		
 		
 	def help_me(self):
 		#Kurzes Hilfemenue
