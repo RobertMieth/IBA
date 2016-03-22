@@ -6,6 +6,8 @@ from PIL import Image, ImageTk
 
 import openpyxl as pxl
 
+import psycopg2
+
 from oauth2client import tools
 from oauth2client.client import flow_from_clientsecrets
 from oauth2client.file import Storage
@@ -70,6 +72,7 @@ class GoogleGrabber():
 		return credentials    
 		
 	def clean_data(self, sheetData):
+		#Entfernt HeaderZeilen und alle Einträge ohne geplantes Installationsdatum
 		sheetData.pop(0)
 		sheetData.pop(0)
 		remove = []
@@ -140,7 +143,7 @@ class ExcelHandler():
 				range2List.append(cell.value)
 				
 		return dict(zip(range1List,range2List))
-		
+	
 		
 		
 	#def update_sysdata(self, param, new_value):
@@ -148,6 +151,35 @@ class ExcelHandler():
 	#	with open("system\sysdata2.json", 'w') as f:
 	#		json.dump(self.sysData, f)	
 
+		
+class DbHandler():
+
+	def __init__(self):
+		self.cursor = self.connect()
+
+	def connect(self):
+		conn_string = "host='localhost' port='5432' dbname='solandeo_operations' user='reader' password='Segoa5oopheleePhah1Aish' client_encoding='utf8'"
+	
+		print ("Connecting to database\n")
+	
+		conn = psycopg2.connect(conn_string)
+	
+		cursor = conn.cursor()
+		print ("Connected to Database!\n")
+	
+		return cursor	
+
+	def get_daten_mst(self, msliste_str):
+		query = "select * from dbfrontend_messstelle as mst where mst.id in " + msliste_str
+		self.cursor.execute(query)
+		return self.cursor.fetchall()
+
+	def get_daten_technologie(self, msliste_str):
+		query = "select mst.id, eva.technologie from dbfrontend_messstelle as mst, dbfrontend_eva as eva where mst.id = eva.messstelle_id and mst.id in " + msliste_str
+		self.cursor.execute(query)
+		return self.cursor.fetchall()
+	
+		
 		
 #GUI App
 class IbaTK(tk.Frame):
@@ -162,6 +194,7 @@ class IbaTK(tk.Frame):
 		
 		self.google = GoogleGrabber()
 		self.excel = ExcelHandler()
+		self.db = DbHandler()
 		
 		self.build()	
 		
@@ -232,24 +265,23 @@ class IbaTK(tk.Frame):
 			self.guiListe.insert('end', addStr)
 		self.get_to_front()
 		
-	def is_date(self, dateStr):
-		#TODO
-		datum = parser.parse(dateStr, fuzzy=True)
-		today = datetime.datetime.today()
-		if today-datum == 0:
-			ans = False
-		else:
-			ans = True
-		
-		return ans
 		
 	def process_data(self):
 		#Processes the gathered Data
 		auswahl = map(int, self.guiListe.curselection())
 		planungsdaten = self.google.session_planungsdaten
+		todoPlanung = []  
 		for a in auswahl:
-			print(planungsdaten[a]['Nummer MST/STST'])
-	
+			todoPlanung.append(planungsdaten[a])
+		msListe = []
+		for m in todoPlanung:
+			msListe.append(m["Nummer MST/STST"])
+		msString = "(" + str(msListe).strip('[]') + ")"
+		todoMessstelle = self.db.get_daten_mst(msString)
+		todoTechnologie = self.db.get_daten_technologie(msString)
+		print(todoTechnologie)
+		
+		
 	def find_path(self):
 		#Dialog zur Einstellung der Excel Dateien
 		print("TODO")
