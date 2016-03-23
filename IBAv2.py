@@ -87,20 +87,118 @@ class GoogleGrabber():
 		
 #Read and write Data from Excel files
 class ExcelHandler():
-	#TODO
 	def __init__(self):
 		self.sysJson = open("system\sysdata.json", 'r')
 		self.sysData = json.load(self.sysJson)
 		
+		self.outDatenfelder = ('Bezeichner', 'Name', 'Messstelle', 'Steuerstelle', 'Komplex', 'Kunde', 'Datum', 'Uhrzeit', 'Umfang Messst.', 'Umfang SSt.', 'Installationspartner', 'PLZ', 'Ort', 'Straße', 'HNr', 'Anfahrtsinfo', 'Anlagentyp', 'Ansprechpartner vor Ort', 'Telefon 1 ASP', 'Telefon 2 ASP', 'Anprechpartner Vertraglich', 'Verteilnetzbetreiber', 'Kontakt VNB', 'Zählpunkt', 'PLZ Messstelle', 'Ort Messstelle', 'Straße Messstelle', 'HNr. Messstelle', 'Position Zähler', 'Gerätenummer', 'MSBA', 'Kontakt MSBA', 'Ausbau durch', 'Wandlerfaktor', 'Spannung ungewandelt', 'Spannung gewandelt', 'Strom ungewandelt', 'Strom gewandelt', 'Typenschlüssel', 'Nennspannung', 'Nennstrom', 'Genauigkeit', 'Leistungsbegrenzung', 'Hilfsspannung', 'Impulsausgang', 'Modem Typ', 'Modem Info', 'Technische Hinweise', 'PLZ Steuerstelle', 'Ort Steuerstelle', 'Straße Steuerstelle', 'HNr. Steuerstelle', 'Position Steuerung', 'Fernwirktechnik', 'Steuermodul', 'Sollwertgeber', 'Steuerung Infos')
+		
 		self.get_data_paths()
 	
 	def write_planungsdaten2excel(self, dbData, planungData):
-		outPath = "2016-01-13_Datenfelder_Installationsbeleg_ReleaseV1.5"
-		outXl = pxl.load_workbook(filename=outPath)
-		outWs = dataXl.get_sheet_by_name("Daten Installationsbelege Neu")
+		outPath = "2016-03-23_Datenfelder_Installationsbeleg_ReleaseV2.0.xlsm"
+		outWb = pxl.load_workbook(filename=outPath, keep_vba = True)
+		outWs = outWb.get_sheet_by_name("Daten Installationsbelege Neu")
+		outWs['B5'].value = ""
+		
+		outData = {}
+		
+		#Add planungsdaten
+		for p in planungData:
+			outData[('Bezeichner', p['Nummer MST/STST'])] = p['Nummer MST/STST']
+			outData[('Datum', p['Nummer MST/STST'])] = p['Datum Installation']
+			outData[('Uhrzeit', p['Nummer MST/STST'])] = p['Uhrzeit']
+			outData[('Umfang Messst.', p['Nummer MST/STST'])] = p['Auftrag Messstelle']
+			outData[('Umfang SSt.', p['Nummer MST/STST'])] = p['Auftrag Steuerstelle']
+			outData[('Installationspartner', p['Nummer MST/STST'])] = p['Termin angefragt bei']
+			outData[('Ansprechpartner vor Ort', p['Nummer MST/STST'])] = str(p['Vorname']) + ' ' + str(p['Nachname'])
+			outData[('Telefon 1 ASP', p['Nummer MST/STST'])] = p['Telefon']
+			outData[('Telefon 2 ASP', p['Nummer MST/STST'])] = p['Mobil']
+			outData[('Ausbau durch', p['Nummer MST/STST'])] = p['Ausbau Altzähler durch']
+			outData[('Typenschlüssel', p['Nummer MST/STST'])] = p['Typenschlüssen (Anfang)']
+			outData[('Nennspannung', p['Nummer MST/STST'])] = p['Spannung']
+			outData[('Nennstrom', p['Nummer MST/STST'])] = p['Stromtyp']
+			outData[('Genauigkeit', p['Nummer MST/STST'])] = p['Genauigkeitsklasse']
+			outData[('Leistungsbegrenzung', p['Nummer MST/STST'])] = p['Leistungsbegrenzung']
+			outData[('Hilfsspannung', p['Nummer MST/STST'])] = p['Hilfsspannung']
+			outData[('Impulsausgang', p['Nummer MST/STST'])] = p['Impulsausgang']
+			outData[('Modem Typ', p['Nummer MST/STST'])] = p['Bezeichnung']
+			outData[('Modem Info', p['Nummer MST/STST'])] = p['Typenschlüssel']
+			outData[('Technische Hinweise', p['Nummer MST/STST'])] = p['technische Hinweise Messstelle']
+			outData[('Steuermodul', p['Nummer MST/STST'])] = p['Steuermodul']
+			outData[('Sollwertgeber', p['Nummer MST/STST'])] = p['Sollwertgeber']
+			outData[('Steuerung Infos', p['Nummer MST/STST'])] = p['technische Hinweise Steuerstelle']
+		
+		#Add dbDaten
+		for lOuter in dbData:
+			for lInner in lOuter:
+				outData[('Name', lInner[1])] = lInner[0]
+				outData[('Messstelle', lInner[1])] = lInner[1]
+				outData[('Steuerstelle', lInner[1])] = lInner[2]
+				outData[('Komplex', lInner[1])] = lInner[3]
+				outData[('Kunde', lInner[1])] = lInner[4]
+				outData[('PLZ', lInner[1])] = lInner[5]
+				outData[('Ort', lInner[1])] = lInner[6]
+				outData[('Straße', lInner[1])] = lInner[7]
+				outData[('HNr', lInner[1])] = lInner[8]
+				outData[('Anlagentyp', lInner[1])] = lInner[9]
+				outData[('Anprechpartner Vertraglich', lInner[1])] = str(lInner[10]) + " " + str(lInner[11]) + " " + str(lInner[12])
+				outData[('Verteilnetzbetreiber', lInner[1])] = lInner[13]
+				if lInner[15] == 0:
+					outData[('Zählpunkt', lInner[1])] = lInner[14]
+				else: 
+					outData[('Zählpunkt', lInner[1])] = lInner[15]
+				outData[('PLZ Messstelle', lInner[1])] = lInner[5]
+				outData[('Ort Messstelle', lInner[1])] = lInner[6]
+				outData[('Straße Messstelle', lInner[1])] = lInner[7]
+				outData[('HNr. Messstelle', lInner[1])] = lInner[8]
+				outData[('Position Zähler', lInner[1])] = lInner[16]
+				outData[('Gerätenummer', lInner[1])] = lInner[17]
+				outData[('MSBA', lInner[1])] = lInner[18]
+				outData[('Wandlerfaktor', lInner[1])] = lInner[19]
+				outData[('Spannung ungewandelt', lInner[1])] = lInner[20]
+				outData[('Spannung gewandelt', lInner[1])] = lInner[21]
+				outData[('Strom ungewandelt', lInner[1])] = lInner[22]
+				outData[('Strom gewandelt', lInner[1])] = lInner[23]
+				outData[('PLZ Steuerstelle', lInner[1])] = lInner[5]
+				outData[('Ort Steuerstelle', lInner[1])] = lInner[6]
+				outData[('Straße Steuerstelle', lInner[1])] = lInner[7]
+				outData[('HNr. Steuerstelle', lInner[1])] = lInner[8]
+		
+		#Add undefined
+		for p in planungData:
+			outData[('Anfahrtsinfo', p['Nummer MST/STST'])] = ""
+			outData[('Kontakt VNB', p['Nummer MST/STST'])] = ""
+			outData[('Kontakt MSBA', p['Nummer MST/STST'])] = ""
+			outData[('Modem Info', p['Nummer MST/STST'])] = ""
+			outData[('Position Steuerung', p['Nummer MST/STST'])] = ""
+			outData[('Fernwirktechnik', p['Nummer MST/STST'])] = ""
 		
 		
+		#Clear old Data
+		clearRange = outWs['A5':'BJ300']
+		for row in clearRange:
+			for cell in row:
+				cell.value = ""
 		
+		#Write new Data
+		i_col = 1
+		i_row = 5
+		
+		for p in planungData:
+			for feld in self.outDatenfelder:
+				value = outData[(feld, p['Nummer MST/STST'])]
+				if value == 0:
+					value = ""
+				else:
+					outWs.cell(row = i_row, column = i_col).value = value
+				i_col += 1
+			i_col = 1
+			i_row +=1
+			
+		outWb.save(filename=outPath)
+		
+		print("Data sucessfully written to " + outPath)
 		
 	def get_data_paths(self):
 		dataXl = pxl.load_workbook(filename = "system\was_liegt_wo.xlsx")
@@ -327,13 +425,9 @@ class IbaTK(tk.Frame):
 		msListe = []
 		todoDbData = []
 		for m in todoPlanung:
-			m_str = m["Nummer MST/STST"]
-			todoDbData.append(self.db.get_db_data(m_str))
-		#msString = "(" + str(msListe).strip('[]') + ",)"
-		#todoDbData = self.db.get_db_data([msListe])
-		#self.excel.write_planungsdaten2excel(todoDbData, todoPlanung)
-		print(todoDbData)
-		#print(todoDbData)
+			todoDbData.append(self.db.get_db_data(m["Nummer MST/STST"]))
+		self.excel.write_planungsdaten2excel(todoDbData, todoPlanung)
+		
 		
 		
 	def find_path(self):
