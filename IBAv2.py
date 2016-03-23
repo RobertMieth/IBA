@@ -93,6 +93,14 @@ class ExcelHandler():
 		self.sysData = json.load(self.sysJson)
 		
 		self.get_data_paths()
+	
+	def write_planungsdaten2excel(self, dbData, planungData):
+		outPath = "2016-01-13_Datenfelder_Installationsbeleg_ReleaseV1.5"
+		outXl = pxl.load_workbook(filename=outPath)
+		outWs = dataXl.get_sheet_by_name("Daten Installationsbelege Neu")
+		
+		
+		
 		
 	def get_data_paths(self):
 		dataXl = pxl.load_workbook(filename = "system\was_liegt_wo.xlsx")
@@ -167,19 +175,62 @@ class DbHandler():
 		cursor = conn.cursor()
 		print ("Connected to Database!\n")
 	
-		return cursor	
-
-	def get_daten_mst(self, msliste_str):
-		query = "select * from dbfrontend_messstelle as mst where mst.id in " + msliste_str
-		self.cursor.execute(query)
-		return self.cursor.fetchall()
-
-	def get_daten_technologie(self, msliste_str):
-		query = "select mst.id, eva.technologie from dbfrontend_messstelle as mst, dbfrontend_eva as eva where mst.id = eva.messstelle_id and mst.id in " + msliste_str
-		self.cursor.execute(query)
-		return self.cursor.fetchall()
+		return cursor
 	
-		
+	def get_db_data(self, ms_in):
+		query = """SELECT 
+					mst.name as name,
+					mst.id as messstelle, 
+					 sts.id as steuerstelle,
+  					mst.komplex_id as komplex, 
+  					k.kundennummer as kunde,
+  					mst.anschrift_plz as mst_plz, 
+  					mst.anschrift_stadt as mst_stadt, 
+  					mst.anschrift_strasse as mst_strasse, 
+  					mst.anschrift_hausnummer as mst_hausnummer, 
+  					eva.technologie as anlagentyp,
+  					p.anrede as k_anrede,
+  					p.nachname as k_nachname,
+  					p.vorname as k_vorname,
+  					vnb.name as verteilnetzbetreiber,
+  					m2k.zpn_kunde as zählpunkt_kunde,
+  					m2vnb.zpn_wim as zählpunkt_wim,
+  					mst.hinweise_zugang, 
+  					mst.zaehler_vorher, 
+  					mst.msb_vorher, 
+  					mst.wandler_faktor, 
+  					mst.spannung_ungewandelt, 
+  					mst.spannung_gewandelt, 
+  					mst.strom_ungewandelt,
+  					mst.strom_gewandelt
+				FROM 
+  					dbfrontend_messstelle as mst
+				LEFT JOIN dbfrontend_steuerstelle as sts ON mst.komplex_id = sts.komplex_id
+				LEFT JOIN dbfrontend_messstelle2kunde as m2k ON mst.id = m2k.messstelle_id 
+				LEFT JOIN dbfrontend_kunde as k ON m2k.kunde_id = k.kundennummer
+				LEFT JOIN dbfrontend_person as p ON k.person_ptr_id = p.id 
+				LEFT JOIN dbfrontend_eva as eva ON mst.id = eva.messstelle_id 
+				LEFT JOIN dbfrontend_messstelle2vnb m2vnb ON mst.id = m2vnb.messstelle_id
+				LEFT JOIN dbfrontend_vnb as vnb ON m2vnb.vnb_id = vnb.id
+				WHERE
+					mst.id = %s
+				GROUP BY
+					mst.id,
+					sts.id,
+					k.kundennummer,
+					eva.technologie,
+					p.anrede,
+					p.nachname,
+					p.vorname,
+					vnb.name,
+					m2k.zpn_kunde,
+					m2vnb.zpn_wim
+				ORDER BY
+					mst.id,
+					sts.id"""
+	
+		self.cursor.execute(query, [ms_in])
+		return self.cursor.fetchall()
 		
 #GUI App
 class IbaTK(tk.Frame):
@@ -274,12 +325,15 @@ class IbaTK(tk.Frame):
 		for a in auswahl:
 			todoPlanung.append(planungsdaten[a])
 		msListe = []
+		todoDbData = []
 		for m in todoPlanung:
-			msListe.append(m["Nummer MST/STST"])
-		msString = "(" + str(msListe).strip('[]') + ")"
-		todoMessstelle = self.db.get_daten_mst(msString)
-		todoTechnologie = self.db.get_daten_technologie(msString)
-		print(todoTechnologie)
+			m_str = m["Nummer MST/STST"]
+			todoDbData.append(self.db.get_db_data(m_str))
+		#msString = "(" + str(msListe).strip('[]') + ",)"
+		#todoDbData = self.db.get_db_data([msListe])
+		#self.excel.write_planungsdaten2excel(todoDbData, todoPlanung)
+		print(todoDbData)
+		#print(todoDbData)
 		
 		
 	def find_path(self):
