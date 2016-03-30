@@ -1,0 +1,555 @@
+missing module named resource - imported by posix, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named posix - imported by os, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named time.gmtime - imported by time, http.cookies
+missing module named time.time - imported by time, multiprocessing.managers, multiprocessing.synchronize, http.cookies
+missing module named _datetime.__doc__ - imported by _datetime, datetime, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _posixsubprocess - imported by subprocess, multiprocessing.util, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named unicodedata.ucd_3_2_0 - imported by unicodedata, stringprep, encodings.idna, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named 'org.python' - imported by pickle, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py, xml.sax
+missing module named 'org.python'.imp - imported by 'org.python', xml.sax
+missing module named 'org.python'.PyStringMap - imported by 'org.python', pickle, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _pickle.dumps - imported by _pickle, pickle, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _pickle.PickleError - imported by _pickle, pickle, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _pickle.dump - imported by _pickle, pickle, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _pickle.loads - imported by _pickle, pickle, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _pickle.UnpicklingError - imported by _pickle, pickle, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _pickle.PicklingError - imported by _pickle, pickle, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _pickle.load - imported by _pickle, pickle, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _pickle.Unpickler - imported by _pickle, pickle, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _pickle.Pickler - imported by _pickle, pickle, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _sre.MAXREPEAT - imported by _sre, sre_constants, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _sre.MAXGROUPS - imported by _sre, sre_constants, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _functools.reduce - imported by _functools, functools, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _functools.cmp_to_key - imported by _functools, functools, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _functools.partial - imported by _functools, functools, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _functools._lru_cache_wrapper - imported by _functools, functools, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _weakref.getweakrefs - imported by _weakref, weakref, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _weakref.proxy - imported by _weakref, weakref, collections, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _weakref.CallableProxyType - imported by _weakref, weakref, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _weakref.getweakrefcount - imported by _weakref, weakref, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _weakref.ReferenceType - imported by _weakref, weakref, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _weakref.ProxyType - imported by _weakref, weakref, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _weakref.ref - imported by _weakref, weakref, _weakrefset, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _heapq._heapreplace_max - imported by _heapq, heapq, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _heapq._heapify_max - imported by _heapq, heapq, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _heapq._heappop_max - imported by _heapq, heapq, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named inspect.CO_GENERATOR - imported by inspect, bdb, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _opcode.stack_effect - imported by _opcode, opcode, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named readline - imported by cmd, code, pdb, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _imp.lock_held - imported by _imp, imp, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _imp.get_frozen_object - imported by _imp, imp, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _imp.is_frozen_package - imported by _imp, imp, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _imp._fix_co_filename - imported by _imp, imp, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _imp.acquire_lock - imported by _imp, imp, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _imp.init_frozen - imported by _imp, imp, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _imp.is_builtin - imported by _imp, imp, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _imp.is_frozen - imported by _imp, imp, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _imp.release_lock - imported by _imp, imp, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _imp.create_dynamic - imported by _imp, imp, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+excluded module named _frozen_importlib - imported by importlib, importlib.abc, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _frozen_importlib_external - imported by importlib._bootstrap, importlib, importlib.abc, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named zipimport.zipimporter - imported by zipimport, pkgutil, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes.Array - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes.Structure - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes.Union - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes._Pointer - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes.CFuncPtr - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes.__version__ - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes.RTLD_LOCAL - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes.RTLD_GLOBAL - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes.ArgumentError - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes.FormatError - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes.FUNCFLAG_USE_ERRNO - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes.FUNCFLAG_PYTHONAPI - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes.FUNCFLAG_CDECL - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes.FUNCFLAG_USE_LASTERROR - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes.LoadLibrary - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes.FUNCFLAG_STDCALL - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes.dlopen - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes.alignment - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes.addressof - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes.byref - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes.sizeof - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes.resize - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes.get_errno - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes.set_errno - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes._SimpleCData - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes._pointer_type_cache - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes.POINTER - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes._check_HRESULT - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes.set_last_error - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes.get_last_error - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes._memset_addr - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes._cast_addr - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes._string_at_addr - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes._memmove_addr - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ctypes._wstring_at_addr - imported by _ctypes, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _winreg - imported by platform, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _winreg.QueryValueEx - imported by _winreg, platform, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _winreg.HKEY_LOCAL_MACHINE - imported by _winreg, platform, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _winreg.OpenKeyEx - imported by _winreg, platform, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _winreg.CloseKey - imported by _winreg, platform, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _scproxy._get_proxies - imported by _scproxy, urllib.request
+missing module named _scproxy._get_proxy_settings - imported by _scproxy, urllib.request
+missing module named _scproxy - imported by urllib.request
+missing module named 'java.lang'.Exception - imported by 'java.lang', xml.sax._exceptions
+missing module named xml.parsers.expat.ParserCreate - imported by xml.parsers.expat, plistlib, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named java - imported by platform, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named java.System - imported by java, platform, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named 'java.lang' - imported by platform, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py, xml.sax._exceptions
+missing module named vms_lib - imported by platform, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named termios - imported by tty, getpass, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ssl.OPENSSL_VERSION - imported by _ssl, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ssl.OPENSSL_VERSION_INFO - imported by _ssl, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ssl.OPENSSL_VERSION_NUMBER - imported by _ssl, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ssl.MemoryBIO - imported by _ssl, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ssl._SSLContext - imported by _ssl, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ssl.SSLZeroReturnError - imported by _ssl, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ssl.SSLWantReadError - imported by _ssl, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ssl.SSLSyscallError - imported by _ssl, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ssl.SSLEOFError - imported by _ssl, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ssl.SSLWantWriteError - imported by _ssl, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ssl.SSLError - imported by _ssl, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ssl.CERT_NONE - imported by _ssl, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ssl.CERT_OPTIONAL - imported by _ssl, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ssl.CERT_REQUIRED - imported by _ssl, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ssl.txt2obj - imported by _ssl, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ssl.nid2obj - imported by _ssl, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ssl.RAND_pseudo_bytes - imported by _ssl, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ssl.RAND_status - imported by _ssl, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ssl.RAND_bytes - imported by _ssl, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ssl.RAND_add - imported by _ssl, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ssl.RAND_egd - imported by _ssl, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ssl.HAS_ALPN - imported by _ssl, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ssl.HAS_NPN - imported by _ssl, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ssl.HAS_SNI - imported by _ssl, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ssl.HAS_ECDH - imported by _ssl, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ssl._OPENSSL_API_VERSION - imported by _ssl, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ssl.enum_crls - imported by _ssl, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _ssl.enum_certificates - imported by _ssl, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named time.strptime - imported by time, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named ssl.OP_NO_COMPRESSION - imported by ssl, requests.packages.urllib3.util.ssl_
+missing module named ssl.OP_NO_SSLv2 - imported by ssl, requests.packages.urllib3.util.ssl_
+missing module named ssl.OP_NO_SSLv3 - imported by ssl, requests.packages.urllib3.util.ssl_
+missing module named ssl.PROTOCOL_SSLv23 - imported by ssl, requests.packages.urllib3.util.ssl_
+missing module named winreg.QueryValueEx - imported by winreg, platform, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named winreg.HKEY_LOCAL_MACHINE - imported by winreg, platform, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named winreg.OpenKeyEx - imported by winreg, platform, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named winreg.CloseKey - imported by winreg, platform, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _hashlib.pbkdf2_hmac - imported by _hashlib, hashlib, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named hashlib.sha256 - imported by hashlib, requests.packages.urllib3.util.ssl_
+missing module named hashlib.sha1 - imported by hashlib, uuid, httplib2, requests.packages.urllib3.util.ssl_
+missing module named hashlib.md5 - imported by hashlib, uuid, httplib2, requests.packages.urllib3.util.ssl_
+missing module named hashlib.sha512 - imported by hashlib, random, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named urllib.getproxies - imported by urllib, requests.compat
+missing module named urllib.quote_plus - imported by urllib, requests.compat
+missing module named urllib.quote - imported by urllib, requests.compat
+missing module named urllib.proxy_bypass - imported by urllib, requests.compat
+missing module named urllib.unquote_plus - imported by urllib, requests.compat
+missing module named urllib.unquote - imported by urllib, requests.compat
+missing module named urllib.urlencode - imported by urllib, gspread, requests.packages.urllib3.request, requests.compat, gspread.httpsession
+missing module named _bz2.BZ2Compressor - imported by _bz2, bz2, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _bz2.BZ2Decompressor - imported by _bz2, bz2, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _lzma._encode_filter_properties - imported by _lzma, lzma, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _lzma._decode_filter_properties - imported by _lzma, lzma, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named grp - imported by tarfile, shutil, pathlib, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named grp.getgrnam - imported by grp, shutil, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named binascii.b2a_qp - imported by binascii, quopri, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named binascii.a2b_qp - imported by binascii, quopri, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named binascii.b2a_base64 - imported by binascii, email.base64mime, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named binascii.a2b_base64 - imported by binascii, email.base64mime, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named binascii.unhexlify - imported by binascii, requests.packages.urllib3.util.ssl_
+missing module named binascii.hexlify - imported by binascii, Crypto.Hash.hashalgo, requests.packages.urllib3.util.ssl_
+missing module named binascii.b2a_hex - imported by binascii, Crypto.Random.Fortuna.FortunaAccumulator, Crypto.Random.Fortuna.SHAd256
+missing module named socket.AF_INET - imported by socket, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named socket.SOCK_STREAM - imported by socket, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named socket.SOL_SOCKET - imported by socket, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named socket.SO_TYPE - imported by socket, ssl, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named socket._fileobject - imported by socket, requests.packages.urllib3.contrib.pyopenssl
+missing module named socket.timeout - imported by socket, requests.packages.urllib3.connectionpool, requests.packages.urllib3.connection, requests.packages.urllib3.response, requests.packages.urllib3.contrib.pyopenssl
+missing module named socket.error - imported by socket, requests.packages.urllib3.connectionpool, requests.packages.urllib3.connection, requests.packages.urllib3.response, requests.packages.urllib3.contrib.pyopenssl
+missing module named _operator._compare_digest - imported by _operator, hmac
+missing module named _operator.__doc__ - imported by _operator, operator, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named posix._exit - imported by posix, os, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named pwd.getpwnam - imported by pwd, shutil, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named pwd - imported by posixpath, tarfile, shutil, http.server, webbrowser, pathlib, netrc, getpass, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named posix._have_functions - imported by posix, os, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named nt._getvolumepathname - imported by nt, ntpath, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named nt._getfullpathname - imported by nt, ntpath, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named nt._getfinalpathname - imported by nt, ntpath, pathlib, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named nt._isdir - imported by nt, ntpath, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named nt._exit - imported by nt, os, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named nt._have_functions - imported by nt, os, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named ce - imported by os, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named ce._exit - imported by ce, os, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named ce._have_functions - imported by ce, os, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named ntpath.commonprefix - imported by ntpath, unittest.util, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _warnings.warn_explicit - imported by _warnings, warnings, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _warnings.filters - imported by _warnings, warnings, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _warnings._defaultaction - imported by _warnings, warnings, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _warnings._filters_mutated - imported by _warnings, warnings, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _warnings._onceregistry - imported by _warnings, warnings, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _warnings.warn - imported by _warnings, warnings, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named time.monotonic - imported by time, subprocess, threading, socketserver, queue, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _thread.RLock - imported by _thread, functools, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _thread.allocate_lock - imported by _thread, _strptime, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _thread.get_ident - imported by _thread, reprlib, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _collections.defaultdict - imported by _collections, collections, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _collections.OrderedDict - imported by _collections, collections, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _collections._count_elements - imported by _collections, collections, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _collections.deque - imported by _collections, threading, collections, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _thread.stack_size - imported by _thread, threading, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _thread._local - imported by _thread, threading, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named threading.current_thread - imported by threading, _threading_local, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named threading.RLock - imported by threading, _threading_local, bz2, openpyxl.compat.functools, multiprocessing.dummy, requests.packages.urllib3._collections, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _winapi.INFINITE - imported by _winapi, multiprocessing.connection
+missing module named _winapi.WAIT_TIMEOUT - imported by _winapi, multiprocessing.connection
+missing module named _winapi.WAIT_ABANDONED_0 - imported by _winapi, multiprocessing.connection
+missing module named _winapi.WAIT_OBJECT_0 - imported by _winapi, multiprocessing.connection
+missing module named select.select - imported by select, requests.packages.urllib3.util.connection
+missing module named select.poll - imported by select, requests.packages.urllib3.util.connection
+missing module named select.POLLIN - imported by select, requests.packages.urllib3.util.connection
+missing module named math.log - imported by math, random, PIL.GimpGradientFile, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py, PIL.IcoImagePlugin
+missing module named math.pi - imported by math, random, PIL.GimpGradientFile, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named math.e - imported by math, random, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named math.ceil - imported by math, random, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py, PIL.IcoImagePlugin
+missing module named math.exp - imported by math, random, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named math.sqrt - imported by math, random, PIL.GimpGradientFile, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named math.cos - imported by math, random, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named math.acos - imported by math, random, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named math.sin - imported by math, random, PIL.GimpGradientFile, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named math.floor - imported by math, Crypto.Random._UserFriendlyRNG
+missing module named math.modf - imported by math, jdcal
+missing module named math.isnan - imported by math, openpyxl.compat.strings
+missing module named _dummy_threading - imported by dummy_threading, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _dummy_threading.__all__ - imported by _dummy_threading, dummy_threading, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named dummy_threading.RLock - imported by dummy_threading, bz2, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _winapi.STD_ERROR_HANDLE - imported by _winapi, subprocess, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _winapi.STD_INPUT_HANDLE - imported by _winapi, subprocess, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _winapi.CREATE_NEW_PROCESS_GROUP - imported by _winapi, subprocess, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _winapi.STARTF_USESHOWWINDOW - imported by _winapi, subprocess, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _winapi.CREATE_NEW_CONSOLE - imported by _winapi, subprocess, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _winapi.STARTF_USESTDHANDLES - imported by _winapi, subprocess, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _winapi.SW_HIDE - imported by _winapi, subprocess, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _winapi.STD_OUTPUT_HANDLE - imported by _winapi, subprocess, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named os.urandom - imported by os, random, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named builtins.abs - imported by builtins, operator, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named builtins.str - imported by builtins, locale, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named builtins.open - imported by builtins, tokenize, tarfile, bz2, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named itertools.islice - imported by itertools, threading, reprlib, pickle, openpyxl.worksheet.worksheet, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named itertools.count - imported by itertools, threading, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named itertools.starmap - imported by itertools, collections, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named itertools.groupby - imported by itertools, openpyxl.worksheet.datavalidation
+missing module named itertools.izip - imported by itertools, openpyxl.compat.itertools
+missing module named itertools.chain - imported by itertools, tokenize, collections, _pydecimal, openpyxl.worksheet.worksheet, openpyxl.chart.reference, openpyxl.worksheet.datavalidation, gspread.models, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named itertools.repeat - imported by itertools, tokenize, collections, _pydecimal, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named org - imported by copy, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named org.PyStringMap - imported by org, copy, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _struct._clearcache - imported by _struct, struct, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _struct.__doc__ - imported by _struct, struct, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named struct.calcsize - imported by struct, ctypes, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named struct.unpack - imported by struct, pickle, PIL._binary, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named struct.pack - imported by struct, pickle, PIL._binary, rsa._compat, rsa.transform, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named struct.unpack_from - imported by struct, PIL.JpegImagePlugin
+missing module named errno.ENOTDIR - imported by errno, pathlib
+missing module named errno.EINVAL - imported by errno, pathlib
+missing module named errno.ENOENT - imported by errno, gettext, pathlib, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named gettext.gettext - imported by gettext, argparse, optparse, getopt, httplib2, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named gettext.ngettext - imported by gettext, argparse, optparse, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named sys.modules - imported by sys, dummy_threading, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named sys.getwindowsversion - imported by sys, platform, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named sys.maxsize - imported by sys, pickle, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named sys.version_info - imported by sys, pyasn1.compat.octets, requests.packages.chardet
+missing module named sys.exc_info - imported by sys, openpyxl.reader.excel
+missing module named _io.DEFAULT_BUFFER_SIZE - imported by _io, io, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _io.StringIO - imported by _io, io, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _io.TextIOWrapper - imported by _io, io, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _io.BufferedReader - imported by _io, io, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _io.FileIO - imported by _io, io, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _io.BufferedRWPair - imported by _io, io, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _io.UnsupportedOperation - imported by _io, io, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _io.BlockingIOError - imported by _io, io, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _io.BytesIO - imported by _io, io, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _io.open - imported by _io, io, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _io.BufferedWriter - imported by _io, io, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _io.BufferedRandom - imported by _io, io, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named _io.IncrementalNewlineDecoder - imported by _io, io, C:\Users\RobertM\Desktop\solandeo_IBA_v2.0\release 2.0beta\IBAv2beta.py
+missing module named dateutil.tz.tzfile - imported by dateutil.tz, dateutil.zoneinfo
+missing module named _json.make_encoder - imported by _json, json.encoder
+missing module named _json.encode_basestring - imported by _json, json.encoder
+missing module named _json.encode_basestring_ascii - imported by _json, json.encoder
+missing module named _json.scanstring - imported by _json, json.decoder
+missing module named _json.make_scanner - imported by _json, json.scanner
+missing module named xml.etree.cElementTree.register_namespace - imported by xml.etree.cElementTree, openpyxl.xml.namespace
+missing module named xml.etree.cElementTree.fromstring - imported by xml.etree.cElementTree, openpyxl.xml.functions
+missing module named xml.etree.cElementTree.Element - imported by xml.etree.cElementTree, openpyxl.xml.functions
+missing module named xml.etree.cElementTree.tostring - imported by xml.etree.cElementTree, openpyxl.xml.functions
+missing module named xml.etree.cElementTree.QName - imported by xml.etree.cElementTree, openpyxl.xml.functions
+missing module named xml.etree.cElementTree.SubElement - imported by xml.etree.cElementTree, openpyxl.xml.functions
+missing module named xml.etree.cElementTree.ElementTree - imported by xml.etree.cElementTree, openpyxl.xml.functions
+missing module named xml.etree.cElementTree.iterparse - imported by xml.etree.cElementTree, openpyxl.xml.functions
+missing module named socks - imported by httplib2
+missing module named urlparse.urlparse - imported by urlparse, requests.compat, gspread.httpsession
+missing module named urlparse - imported by requests.packages.urllib3.poolmanager, requests.compat, gspread.httpsession
+missing module named urlparse.urlsplit - imported by urlparse, requests.compat
+missing module named urlparse.urldefrag - imported by urlparse, requests.compat
+missing module named urlparse.urlunparse - imported by urlparse, requests.compat
+missing module named urlparse.urljoin - imported by urlparse, requests.packages.urllib3.poolmanager, requests.compat
+missing module named httplib - imported by requests.packages.urllib3.connection, gspread.httpsession
+missing module named httplib.HTTPException - imported by httplib, requests.packages.urllib3.connection
+missing module named httplib.HTTPConnection - imported by httplib, requests.packages.urllib3.connection
+missing module named chardet - imported by requests.packages
+missing module named urllib3 - imported by requests.packages
+missing module named 'requests.packages.urllib3.packages.six.moves'.http_client - imported by 'requests.packages.urllib3.packages.six.moves', requests.packages.urllib3.util.response, requests.packages.urllib3.response
+missing module named 'requests.packages.urllib3.packages.six.moves' - imported by requests.packages.urllib3.util.response, requests.packages.urllib3.response
+missing module named StringIO - imported by six, requests.packages.urllib3.packages.six, requests.compat
+missing module named StringIO.StringIO - imported by StringIO, requests.compat
+missing module named backports.match_hostname - imported by backports, requests.packages.urllib3.packages.ssl_match_hostname
+missing module named backports.CertificateError - imported by backports, requests.packages.urllib3.packages.ssl_match_hostname
+missing module named backports - imported by requests.packages.urllib3.packages.ssl_match_hostname
+missing module named _abcoll.ItemsView - imported by _abcoll, openpyxl.compat.odict, requests.packages.urllib3.packages.ordered_dict
+missing module named _abcoll.ValuesView - imported by _abcoll, openpyxl.compat.odict, requests.packages.urllib3.packages.ordered_dict
+missing module named _abcoll.KeysView - imported by _abcoll, openpyxl.compat.odict, requests.packages.urllib3.packages.ordered_dict
+missing module named _abcoll - imported by openpyxl.compat.odict, requests.packages.urllib3.packages.ordered_dict
+missing module named dummy_thread.get_ident - imported by dummy_thread, openpyxl.compat.odict, requests.packages.urllib3.packages.ordered_dict
+missing module named dummy_thread - imported by openpyxl.compat.odict, requests.packages.urllib3.packages.ordered_dict
+missing module named thread.get_ident - imported by thread, openpyxl.compat.odict, requests.packages.urllib3.packages.ordered_dict
+missing module named thread - imported by openpyxl.compat.odict, requests.packages.urllib3.packages.ordered_dict
+missing module named Queue.Empty - imported by Queue, requests.packages.urllib3.connectionpool
+missing module named Queue.Full - imported by Queue, requests.packages.urllib3.connectionpool
+missing module named Queue.LifoQueue - imported by Queue, requests.packages.urllib3.connectionpool
+missing module named Queue - imported by requests.packages.urllib3.connectionpool
+missing module named Cookie.Morsel - imported by Cookie, requests.compat
+missing module named Cookie - imported by requests.compat
+missing module named cookielib - imported by requests.compat
+missing module named urllib2.parse_http_list - imported by urllib2, requests.compat
+missing module named urllib2 - imported by requests.compat
+missing module named simplejson - imported by psycopg2._json, requests.compat
+missing module named certifi.where - imported by certifi, requests.certs
+missing module named certifi - imported by requests.certs
+missing module named requests.__version__ - imported by requests, requests.utils
+missing module named 'OpenSSL.SSL' - imported by requests.packages.urllib3.contrib.pyopenssl
+missing module named 'ndg.httpsclient'.SubjectAltName - imported by 'ndg.httpsclient', requests.packages.urllib3.contrib.pyopenssl
+missing module named 'ndg.httpsclient' - imported by requests.packages.urllib3.contrib.pyopenssl
+missing module named ndg.SUBJ_ALT_NAME_SUPPORT - imported by ndg, requests.packages.urllib3.contrib.pyopenssl
+missing module named ndg - imported by requests.packages.urllib3.contrib.pyopenssl
+missing module named gspread.urlencode - imported by gspread, gspread.client, gspread.models
+missing module named gspread.__version__ - imported by gspread, gspread.client
+missing module named oauth2client.client.Storage - imported by oauth2client.client, oauth2client.appengine, oauth2client.file
+missing module named oauth2client.client.Credentials - imported by oauth2client.client, oauth2client.appengine, oauth2client.file
+missing module named oauth2client.client.HttpAccessTokenRefreshError - imported by oauth2client.client, oauth2client.gce
+missing module named 'google.appengine'.ndb - imported by 'google.appengine', oauth2client.appengine
+missing module named 'google.appengine'.login_required - imported by 'google.appengine', oauth2client.appengine
+missing module named 'google.appengine'.db - imported by 'google.appengine', oauth2client.appengine
+missing module named 'google.appengine'.users - imported by 'google.appengine', oauth2client.appengine
+missing module named 'google.appengine'.memcache - imported by 'google.appengine', oauth2client.appengine
+missing module named 'google.appengine'.app_identity - imported by 'google.appengine', oauth2client.appengine
+missing module named 'google.appengine' - imported by oauth2client.appengine
+missing module named webapp2 - imported by oauth2client.appengine
+missing module named oauth2client.client.OAuth2WebServerFlow - imported by oauth2client.client, oauth2client.appengine
+missing module named oauth2client.client.Flow - imported by oauth2client.client, oauth2client.appengine
+missing module named oauth2client.client.AccessTokenRefreshError - imported by oauth2client.client, oauth2client.appengine
+missing module named _multiprocessing.sem_unlink - imported by _multiprocessing, multiprocessing.synchronize
+missing module named _multiprocessing.SemLock - imported by _multiprocessing, multiprocessing.synchronize
+missing module named multiprocessing.set_start_method - imported by multiprocessing, multiprocessing.spawn
+missing module named multiprocessing.get_start_method - imported by multiprocessing, multiprocessing.spawn
+missing module named array.array - imported by array, openpyxl.styles.styleable
+missing module named multiprocessing.pool.ThreadPool - imported by multiprocessing.pool, multiprocessing.dummy
+missing module named multiprocessing.get_context - imported by multiprocessing, multiprocessing.pool, multiprocessing.managers, multiprocessing.sharedctypes
+missing module named multiprocessing.TimeoutError - imported by multiprocessing, multiprocessing.pool
+missing module named multiprocessing.connection.Listener - imported by multiprocessing.connection, multiprocessing.resource_sharer
+missing module named multiprocessing.connection.Client - imported by multiprocessing.connection, multiprocessing.resource_sharer
+missing module named multiprocessing.BufferTooShort - imported by multiprocessing, multiprocessing.connection
+missing module named multiprocessing.AuthenticationError - imported by multiprocessing, multiprocessing.connection
+missing module named multiprocessing.context.assert_spawning - imported by multiprocessing.context, multiprocessing.sharedctypes
+missing module named multiprocessing.context.get_spawning_popen - imported by multiprocessing.context, multiprocessing.process
+missing module named psyco - imported by rsa.transform
+missing module named oauth2client.client.AssertionCredentials - imported by oauth2client.client, oauth2client.service_account, oauth2client.appengine, oauth2client.gce
+missing module named google - imported by oauth2client.client
+missing module named 'Crypto.Util.py21compat' - imported by Crypto.PublicKey.RSA, Crypto.Util._number_new, Crypto.Random.OSRNG.rng_base, Crypto.Random._UserFriendlyRNG, Crypto.Random.Fortuna.FortunaAccumulator, Crypto.Random.Fortuna.SHAd256, Crypto.Random.Fortuna.FortunaGenerator, Crypto.Util.Counter, Crypto.Cipher.blockalgo, Crypto.Random.random, Crypto.PublicKey._slowmath
+missing module named winrandom - imported by Crypto.Random.OSRNG.nt
+missing module named Crypto.Util.number.long_to_bytes - imported by Crypto.Util.number, Crypto.Random.random, Crypto.PublicKey.RSA, Crypto.Util.asn1
+missing module named Crypto.Util.number.bytes_to_long - imported by Crypto.Util.number, Crypto.Random.random, Crypto.PublicKey.RSA, Crypto.Util.asn1
+missing module named Crypto.Util.number.ceil_div - imported by Crypto.Util.number, Crypto.Signature.PKCS1_v1_5
+missing module named Crypto.Util.number.size - imported by Crypto.Util.number, Crypto.Random.random, Crypto.PublicKey._slowmath
+missing module named Crypto.PublicKey._fastmath - imported by Crypto.PublicKey, Crypto.Util.number, Crypto.PublicKey.RSA
+missing module named Crypto.Hash.sha - imported by Crypto.Hash, Crypto.Hash.SHA
+missing module named Crypto.Util.strxor.strxor_c - imported by Crypto.Util.strxor, Crypto.Hash.HMAC
+missing module named Crypto.Util.strxor.strxor - imported by Crypto.Util.strxor, Crypto.Protocol.KDF
+missing module named Crypto.Hash.md5 - imported by Crypto.Hash, Crypto.Hash.MD5
+missing module named OpenSSL.crypto - imported by OpenSSL, oauth2client._openssl_crypt
+missing module named OpenSSL - imported by oauth2client._openssl_crypt
+missing module named 'six.moves.urllib' - imported by 'six.moves.urllib'
+missing module named six.moves.input - imported by six.moves, oauth2client.tools
+missing module named six.moves.BaseHTTPServer - imported by six.moves, oauth2client.tools
+missing module named psycopg2._psycopg.Decimal - imported by psycopg2._psycopg, psycopg2
+missing module named decimal.Decimal - imported by decimal, fractions, openpyxl.compat.numbers, psycopg2
+missing module named _decimal.__libmpdec_version__ - imported by _decimal, decimal
+missing module named _decimal.__version__ - imported by _decimal, decimal
+missing module named _decimal.__doc__ - imported by _decimal, decimal
+missing module named psycopg2.extras._solve_conn_curs - imported by psycopg2.extras, psycopg2._range, psycopg2._json
+missing module named psycopg2._json.Json - imported by psycopg2._json, psycopg2.extras
+missing module named psycopg2._json.register_json - imported by psycopg2._json, psycopg2.extras
+missing module named psycopg2._json.register_default_jsonb - imported by psycopg2._json, psycopg2.extras, psycopg2.extensions
+missing module named psycopg2._json.register_default_json - imported by psycopg2._json, psycopg2.extras, psycopg2.extensions
+missing module named psycopg2.extensions.new_type - imported by psycopg2.extensions, psycopg2._range
+missing module named psycopg2.extensions.new_array_type - imported by psycopg2.extensions, psycopg2._range
+missing module named psycopg2.extensions.register_type - imported by psycopg2.extensions, psycopg2._range
+missing module named psycopg2.extensions.ISQLQuote - imported by psycopg2.extensions, psycopg2._range
+missing module named psycopg2.extensions.register_adapter - imported by psycopg2.extensions, psycopg2._range
+missing module named psycopg2.extensions.POLL_WRITE - imported by psycopg2.extensions, psycopg2.extras
+missing module named psycopg2.extensions.POLL_READ - imported by psycopg2.extensions, psycopg2.extras
+missing module named psycopg2.extensions.POLL_OK - imported by psycopg2.extensions, psycopg2.extras
+missing module named psycopg2.extensions.b - imported by psycopg2.extensions, psycopg2.extras, psycopg2._range
+missing module named psycopg2.extensions.adapt - imported by psycopg2.extensions, psycopg2.extras, psycopg2._range
+missing module named psycopg2.extensions.connection - imported by psycopg2.extensions, psycopg2.extras
+missing module named psycopg2.extensions.cursor - imported by psycopg2.extensions, psycopg2.extras
+missing module named psycopg2.extensions.STATUS_IN_TRANSACTION - imported by psycopg2.extensions, psycopg2._json, psycopg2._range
+missing module named psycopg2._psycopg.get_wait_callback - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.set_wait_callback - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.QueryCanceledError - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.TransactionRollbackError - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.Column - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.Notify - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.ISQLQuote - imported by psycopg2._psycopg, psycopg2.extensions, psycopg2._json
+missing module named psycopg2._psycopg.Diagnostics - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.binary_types - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.new_type - imported by psycopg2._psycopg, psycopg2.extensions, psycopg2._json
+missing module named psycopg2._psycopg.string_types - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.register_type - imported by psycopg2._psycopg, psycopg2.extensions, psycopg2._json
+missing module named psycopg2._psycopg.new_array_type - imported by psycopg2._psycopg, psycopg2.extensions, psycopg2._json
+missing module named psycopg2._psycopg.connection - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.cursor - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.adapters - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.adapt - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.encodings - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.lobject - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.Xid - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.IntervalFromPy - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.DateFromPy - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.TimestampFromPy - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.TimeFromPy - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.PYDATEARRAY - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.PYTIMEARRAY - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.PYDATETIMEARRAY - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.PYINTERVALARRAY - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.PYINTERVAL - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.PYDATE - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.PYTIME - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.PYDATETIME - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.IntervalFromMx - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.TimeFromMx - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.DateFromMx - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.TimestampFromMx - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.MXINTERVALARRAY - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.MXTIMEARRAY - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.MXDATEARRAY - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.MXDATETIMEARRAY - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.MXDATE - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.MXTIME - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.MXDATETIME - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.MXINTERVAL - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.QuotedString - imported by psycopg2._psycopg, psycopg2.extensions, psycopg2._json
+missing module named psycopg2._psycopg.Float - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.Int - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.AsIs - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.Boolean - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.UNICODEARRAY - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.STRINGARRAY - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.ROWIDARRAY - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.LONGINTEGERARRAY - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.TIMEARRAY - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.FLOATARRAY - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.DECIMALARRAY - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.INTEGERARRAY - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.INTERVALARRAY - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.DATEARRAY - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.DATETIMEARRAY - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.BINARYARRAY - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.BOOLEANARRAY - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.DATE - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.TIME - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.INTERVAL - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.UNICODE - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.INTEGER - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.LONGINTEGER - imported by psycopg2._psycopg, psycopg2.extensions
+missing module named psycopg2._psycopg.__version__ - imported by psycopg2._psycopg, psycopg2
+missing module named psycopg2._psycopg.apilevel - imported by psycopg2._psycopg, psycopg2
+missing module named psycopg2._psycopg.threadsafety - imported by psycopg2._psycopg, psycopg2
+missing module named psycopg2._psycopg._connect - imported by psycopg2._psycopg, psycopg2
+missing module named psycopg2._psycopg.paramstyle - imported by psycopg2._psycopg, psycopg2
+missing module named psycopg2._psycopg.NotSupportedError - imported by psycopg2._psycopg, psycopg2
+missing module named psycopg2._psycopg.OperationalError - imported by psycopg2._psycopg, psycopg2
+missing module named psycopg2._psycopg.InterfaceError - imported by psycopg2._psycopg, psycopg2, psycopg2._range
+missing module named psycopg2._psycopg.InternalError - imported by psycopg2._psycopg, psycopg2
+missing module named psycopg2._psycopg.IntegrityError - imported by psycopg2._psycopg, psycopg2
+missing module named psycopg2._psycopg.Warning - imported by psycopg2._psycopg, psycopg2
+missing module named psycopg2._psycopg.DatabaseError - imported by psycopg2._psycopg, psycopg2
+missing module named psycopg2._psycopg.ProgrammingError - imported by psycopg2._psycopg, psycopg2, psycopg2._range
+missing module named psycopg2._psycopg.Error - imported by psycopg2._psycopg, psycopg2
+missing module named psycopg2._psycopg.DataError - imported by psycopg2._psycopg, psycopg2
+missing module named psycopg2._psycopg.TimeFromTicks - imported by psycopg2._psycopg, psycopg2
+missing module named psycopg2._psycopg.TimestampFromTicks - imported by psycopg2._psycopg, psycopg2
+missing module named psycopg2._psycopg.DateFromTicks - imported by psycopg2._psycopg, psycopg2
+missing module named psycopg2._psycopg.Binary - imported by psycopg2._psycopg, psycopg2, psycopg2.extensions
+missing module named psycopg2._psycopg.Timestamp - imported by psycopg2._psycopg, psycopg2
+missing module named psycopg2._psycopg.DATETIME - imported by psycopg2._psycopg, psycopg2
+missing module named psycopg2._psycopg.ROWID - imported by psycopg2._psycopg, psycopg2
+missing module named psycopg2._psycopg.NUMBER - imported by psycopg2._psycopg, psycopg2
+missing module named psycopg2._psycopg.STRING - imported by psycopg2._psycopg, psycopg2
+missing module named openpyxl.descriptors.Alias - imported by openpyxl.descriptors, openpyxl.styles.alignment, openpyxl.styles.borders, openpyxl.styles.fills, openpyxl.styles.fonts, openpyxl.worksheet.dimensions, openpyxl.worksheet.protection, openpyxl.packaging.relationship, openpyxl.chart.area_chart, openpyxl.chart._chart, openpyxl.chart._3d, openpyxl.chart.marker, openpyxl.chart.layout, openpyxl.chart.shapes, openpyxl.drawing.colors, openpyxl.drawing.fill, openpyxl.drawing.line, openpyxl.drawing.shapes, openpyxl.chart.text, openpyxl.drawing.text, openpyxl.chart.data_source, openpyxl.chart.error_bar, openpyxl.chart.legend, openpyxl.chart.series, openpyxl.chart.label, openpyxl.chart.trendline, openpyxl.chart.title, openpyxl.chart.chartspace, openpyxl.chart.bar_chart, openpyxl.chart.axis, openpyxl.chart.bubble_chart, openpyxl.chart.line_chart, openpyxl.chart.pie_chart, openpyxl.chart.radar_chart, openpyxl.chart.scatter_chart, openpyxl.chart.stock_chart, openpyxl.chart.surface_chart, openpyxl.drawing.graphic, openpyxl.chartsheet.relation, openpyxl.workbook.properties, openpyxl.cell.text, openpyxl.comments.author
+missing module named openpyxl.cell.column_index_from_string - imported by openpyxl.cell, openpyxl.drawing.image
+missing module named openpyxl.cell.Cell - imported by openpyxl.cell, openpyxl.worksheet.worksheet, openpyxl.writer.write_only, openpyxl.reader.worksheet, openpyxl.cell.read_only
+missing module named openpyxl.worksheet.rows_from_range - imported by openpyxl.worksheet, openpyxl.worksheet.datavalidation
+missing module named openpyxl.worksheet.RowDimension - imported by openpyxl.worksheet, openpyxl.reader.worksheet
+missing module named openpyxl.worksheet.ColumnDimension - imported by openpyxl.worksheet, openpyxl.reader.worksheet
+missing module named openpyxl.worksheet.Worksheet - imported by openpyxl.worksheet, openpyxl.workbook.workbook, openpyxl.writer.write_only, openpyxl.chart.reference, openpyxl.writer.workbook, openpyxl.reader.worksheet, openpyxl.worksheet.read_only
+missing module named openpyxl.descriptors.MinMax - imported by openpyxl.descriptors, openpyxl.styles.alignment, openpyxl.styles.colors, openpyxl.descriptors.excel, openpyxl.drawing.colors, openpyxl.drawing.fill, openpyxl.drawing.line, openpyxl.drawing.shapes, openpyxl.drawing.text, openpyxl.chart.reference, openpyxl.chart.chartspace, openpyxl.chart.axis, openpyxl.chart.bubble_chart, openpyxl.chart.pie_chart
+missing module named openpyxl.descriptors.Descriptor - imported by openpyxl.descriptors, openpyxl.styles.hashable, openpyxl.styles.colors
+missing module named openpyxl.descriptors.Min - imported by openpyxl.descriptors, openpyxl.styles.alignment
+missing module named openpyxl.descriptors.NoneSet - imported by openpyxl.descriptors, openpyxl.styles.alignment, openpyxl.styles.borders, openpyxl.styles.fills, openpyxl.formatting.rule, openpyxl.worksheet.page, openpyxl.worksheet.views, openpyxl.packaging.relationship, openpyxl.drawing.spreadsheet_drawing, openpyxl.chart.layout, openpyxl.drawing.fill, openpyxl.drawing.effect, openpyxl.drawing.line, openpyxl.drawing.shapes, openpyxl.drawing.text, openpyxl.chart.chartspace, openpyxl.chart.axis, openpyxl.chart.pie_chart, openpyxl.drawing.graphic, openpyxl.cell.text, openpyxl.worksheet.datavalidation
+missing module named openpyxl.descriptors.MatchPattern - imported by openpyxl.descriptors, openpyxl.descriptors.excel
+missing module named openpyxl.descriptors.Integer - imported by openpyxl.descriptors, openpyxl.styles.colors, openpyxl.descriptors.excel, openpyxl.styles.differential, openpyxl.formatting.rule, openpyxl.worksheet.page, openpyxl.worksheet.dimensions, openpyxl.worksheet.protection, openpyxl.worksheet.views, openpyxl.worksheet.pagebreak, openpyxl.drawing.spreadsheet_drawing, openpyxl.chart.area_chart, openpyxl.chart._chart, openpyxl.drawing.colors, openpyxl.drawing.fill, openpyxl.drawing.effect, openpyxl.drawing.line, openpyxl.drawing.shapes, openpyxl.drawing.text, openpyxl.chart.data_source, openpyxl.chart.legend, openpyxl.chart.series, openpyxl.chart.label, openpyxl.chart.chartspace, openpyxl.chart.bar_chart, openpyxl.chart.axis, openpyxl.chart.bubble_chart, openpyxl.chart.pie_chart, openpyxl.chart.surface_chart, openpyxl.drawing.graphic, openpyxl.chartsheet.relation, openpyxl.chartsheet.protection, openpyxl.chartsheet.views, openpyxl.chartsheet.custom, openpyxl.chartsheet.publish, openpyxl.cell.text, openpyxl.styles.named_styles, openpyxl.comments.properties
+missing module named openpyxl.descriptors.String - imported by openpyxl.descriptors, openpyxl.styles.colors, openpyxl.styles.numbers, openpyxl.worksheet.hyperlink, openpyxl.descriptors.excel, openpyxl.styles.differential, openpyxl.formatting.rule, openpyxl.worksheet.page, openpyxl.worksheet.dimensions, openpyxl.worksheet.protection, openpyxl.worksheet.views, openpyxl.worksheet.properties, openpyxl.packaging.relationship, openpyxl.drawing.effect, openpyxl.drawing.line, openpyxl.drawing.shapes, openpyxl.drawing.text, openpyxl.chart.data_source, openpyxl.chart.reference, openpyxl.chart.series, openpyxl.chart.label, openpyxl.chart.trendline, openpyxl.chart.chartspace, openpyxl.chart.axis, openpyxl.drawing.graphic, openpyxl.packaging.manifest, openpyxl.chartsheet.properties, openpyxl.chartsheet.protection, openpyxl.chartsheet.publish, openpyxl.workbook.properties, openpyxl.workbook.names.external, openpyxl.cell.text, openpyxl.worksheet.datavalidation, openpyxl.comments.properties
+missing module named openpyxl.descriptors.Typed - imported by openpyxl.descriptors, openpyxl.styles, openpyxl.styles.borders, openpyxl.styles.colors, openpyxl.descriptors.excel, openpyxl.styles.differential, openpyxl.formatting.rule, openpyxl.worksheet.views, openpyxl.worksheet.properties, openpyxl.drawing.spreadsheet_drawing, openpyxl.chart.area_chart, openpyxl.chart._chart, openpyxl.chart._3d, openpyxl.chart.marker, openpyxl.chart.layout, openpyxl.chart.shapes, openpyxl.drawing.colors, openpyxl.drawing.fill, openpyxl.drawing.effect, openpyxl.drawing.line, openpyxl.drawing.shapes, openpyxl.chart.text, openpyxl.drawing.text, openpyxl.chart.data_source, openpyxl.chart.error_bar, openpyxl.chart.legend, openpyxl.chart.reference, openpyxl.chart.series, openpyxl.chart.label, openpyxl.chart.trendline, openpyxl.chart.title, openpyxl.chart.chartspace, openpyxl.chart.bar_chart, openpyxl.chart.descriptors, openpyxl.chart.axis, openpyxl.chart.bubble_chart, openpyxl.chart.line_chart, openpyxl.chart.updown_bars, openpyxl.chart.pie_chart, openpyxl.chart.radar_chart, openpyxl.chart.scatter_chart, openpyxl.chart.stock_chart, openpyxl.chart.surface_chart, openpyxl.drawing.graphic, openpyxl.chartsheet.chartsheet, openpyxl.chartsheet.properties, openpyxl.chartsheet.views, openpyxl.chartsheet.custom, openpyxl.workbook.properties, openpyxl.cell.text, openpyxl.styles.named_styles, openpyxl.comments.properties
+missing module named openpyxl.descriptors.Float - imported by openpyxl.descriptors, openpyxl.styles.fills, openpyxl.formatting.rule, openpyxl.worksheet.page, openpyxl.worksheet.dimensions, openpyxl.worksheet.views, openpyxl.chart.layout, openpyxl.drawing.effect, openpyxl.drawing.line, openpyxl.drawing.shapes, openpyxl.chart.error_bar, openpyxl.chart.label, openpyxl.chart.chartspace, openpyxl.chart.axis, openpyxl.chart.pie_chart, openpyxl.comments.properties
+missing module named openpyxl.descriptors.Set - imported by openpyxl.descriptors, openpyxl.styles.fills, openpyxl.formatting.rule, openpyxl.worksheet.views, openpyxl.packaging.relationship, openpyxl.chart.area_chart, openpyxl.drawing.colors, openpyxl.drawing.fill, openpyxl.drawing.effect, openpyxl.drawing.line, openpyxl.drawing.shapes, openpyxl.drawing.text, openpyxl.chart.error_bar, openpyxl.chart.label, openpyxl.chart.axis, openpyxl.chart.bubble_chart, openpyxl.drawing.graphic, openpyxl.chartsheet.chartsheet, openpyxl.chartsheet.custom, openpyxl.chartsheet.publish, openpyxl.cell.text, openpyxl.comments.properties
+missing module named openpyxl.descriptors.Bool - imported by openpyxl.descriptors, openpyxl.styles.alignment, openpyxl.styles.borders, openpyxl.styles.colors, openpyxl.styles.protection, openpyxl.formatting.rule, openpyxl.worksheet.page, openpyxl.worksheet.dimensions, openpyxl.worksheet.protection, openpyxl.worksheet.views, openpyxl.worksheet.properties, openpyxl.worksheet.pagebreak, openpyxl.drawing.spreadsheet_drawing, openpyxl.chart.area_chart, openpyxl.drawing.fill, openpyxl.drawing.effect, openpyxl.drawing.line, openpyxl.drawing.shapes, openpyxl.drawing.text, openpyxl.chart.data_source, openpyxl.chart.series, openpyxl.chart.label, openpyxl.chart.chartspace, openpyxl.chart.bar_chart, openpyxl.chart.axis, openpyxl.chart.bubble_chart, openpyxl.chart.pie_chart, openpyxl.chart.surface_chart, openpyxl.drawing.graphic, openpyxl.chartsheet.properties, openpyxl.chartsheet.protection, openpyxl.chartsheet.views, openpyxl.chartsheet.custom, openpyxl.chartsheet.publish, openpyxl.cell.text, openpyxl.worksheet.datavalidation, openpyxl.styles.named_styles, openpyxl.comments.properties
+missing module named 'lxml.etree'.fromstring - imported by 'lxml.etree', openpyxl.xml.functions
+missing module named 'lxml.etree'.iterparse - imported by 'lxml.etree', openpyxl.xml.functions
+missing module named 'lxml.etree'.Element - imported by 'lxml.etree', openpyxl.xml.functions
+missing module named 'lxml.etree'.tostring - imported by 'lxml.etree', openpyxl.xml.functions
+missing module named 'lxml.etree'.QName - imported by 'lxml.etree', openpyxl.xml.functions
+missing module named 'lxml.etree'.xmlfile - imported by 'lxml.etree', openpyxl.xml.functions
+missing module named 'lxml.etree'.register_namespace - imported by 'lxml.etree', openpyxl.xml.functions
+missing module named 'lxml.etree'.SubElement - imported by 'lxml.etree', openpyxl.xml.functions
+missing module named 'lxml.etree'.ElementTree - imported by 'lxml.etree', openpyxl.xml.functions
+missing module named 'lxml.etree' - imported by openpyxl.xml.functions
+missing module named openpyxl.comments.Comment - imported by openpyxl.comments, openpyxl.comments.reader
+missing module named openpyxl.workbook.DocumentProperties - imported by openpyxl.workbook, openpyxl.reader.workbook
+missing module named openpyxl.workbook.names.external.detect_external_links - imported by openpyxl.workbook.names.external, openpyxl.reader.excel
+missing module named tests.KEEP_VBA - imported by tests, openpyxl.reader.excel
+missing module named openpyxl.workbook.Workbook - imported by openpyxl.workbook, openpyxl.reader.excel, openpyxl
+missing module named openpyxl.chartsheet.Chartsheet - imported by openpyxl.chartsheet, openpyxl.writer.workbook, openpyxl.workbook.workbook
+missing module named openpyxl.drawing.drawing.Drawing - imported by openpyxl.drawing.drawing, openpyxl.drawing.image
+missing module named openpyxl.chart.area_chart.AreaChart - imported by openpyxl.chart.area_chart, openpyxl.chart.chartspace, openpyxl.chart
+missing module named openpyxl.chart.area_chart.AreaChart3D - imported by openpyxl.chart.area_chart, openpyxl.chart.chartspace, openpyxl.chart
+missing module named openpyxl.chart._chart.ChartBase - imported by openpyxl.chart._chart, openpyxl.chart.bar_chart, openpyxl.chart.bubble_chart, openpyxl.chart.line_chart, openpyxl.chart.pie_chart, openpyxl.chart.radar_chart, openpyxl.chart.scatter_chart, openpyxl.chart.stock_chart, openpyxl.chart.surface_chart, openpyxl.chart.area_chart, openpyxl.drawing.spreadsheet_drawing
+missing module named Image - imported by openpyxl.drawing.image
+missing module named openpyxl.LXML - imported by openpyxl, openpyxl.xml.functions, openpyxl.writer.worksheet, openpyxl.writer.workbook
+missing module named lxml.LXML_VERSION - imported by lxml, openpyxl.xml
+missing module named lxml - imported by openpyxl.xml
+missing module named 'PySide.QtCore'.QBuffer - imported by 'PySide.QtCore', PIL.ImageQt
+missing module named 'PySide.QtCore'.QIODevice - imported by 'PySide.QtCore', PIL.ImageQt
+missing module named 'PySide.QtCore' - imported by PIL.ImageQt
+missing module named 'PyQt4.QtCore'.QBuffer - imported by 'PyQt4.QtCore', PIL.ImageQt
+missing module named 'PyQt4.QtCore'.QIODevice - imported by 'PyQt4.QtCore', PIL.ImageQt
+missing module named 'PyQt4.QtCore' - imported by PIL.ImageQt
+missing module named 'PyQt5.QtCore'.QBuffer - imported by 'PyQt5.QtCore', PIL.ImageQt
+missing module named 'PyQt5.QtCore'.QIODevice - imported by 'PyQt5.QtCore', PIL.ImageQt
+missing module named 'PyQt5.QtCore' - imported by PIL.ImageQt
+missing module named cffi.FFI - imported by cffi, PIL.PyAccess
+missing module named _imaging_gif - imported by PIL.GifImagePlugin
+missing module named cffi - imported by PIL.Image, PIL.PyAccess
+missing module named __builtin__ - imported by PIL.Image
+missing module named Tkinter - imported by PIL.ImageTk

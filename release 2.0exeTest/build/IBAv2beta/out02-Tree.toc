@@ -1,0 +1,7 @@
+('c:\\python35\\lib\\site-packages\\python_dateutil-2.0-py3.5.egg',
+ None,
+ {'*.so', '*.pyc', '*.pyd', '*.py', '*.pyo', 'EGG-INFO'},
+ 'DATA',
+ [('dateutil\\zoneinfo\\zoneinfo-2011d.tar.gz',
+   'c:\\python35\\lib\\site-packages\\python_dateutil-2.0-py3.5.egg\\dateutil\\zoneinfo\\zoneinfo-2011d.tar.gz',
+   'DATA')])
