@@ -97,7 +97,11 @@ class ExcelHandler():
 	
 	def write_planungsdaten2excel(self, dbData, planungData):
 		outPath = "2016-03-23_Datenfelder_Installationsbeleg_ReleaseV2.0.xlsm"
-		outWb = pxl.load_workbook(filename=outPath, keep_vba = True)
+		try:
+			outWb = pxl.load_workbook(filename=outPath, keep_vba = True)
+		except:
+			print(outPath + " must be closed!")
+			return
 		outWs = outWb.get_sheet_by_name("Daten Installationsbelege Neu")
 		outWs['B5'].value = ""
 		
@@ -109,7 +113,7 @@ class ExcelHandler():
 			outData[('Datum', p['Nummer MST/STST'])] = p['Datum Installation']
 			outData[('Uhrzeit', p['Nummer MST/STST'])] = p['Uhrzeit']
 			outData[('Umfang Messst.', p['Nummer MST/STST'])] = p['Auftrag Messstelle']
-			outData[('Umfang SSt.', p['Nummer MST/STST'])] = p['Auftrag Steuerstelle']
+			outData[('Umfang SSt.', p['Nummer MST/STST'])] = p['Auftrag Steuerstelle']	
 			outData[('Installationspartner', p['Nummer MST/STST'])] = p['Termin angefragt bei']
 			outData[('Ansprechpartner vor Ort', p['Nummer MST/STST'])] = str(p['Vorname']) + ' ' + str(p['Nachname'])
 			outData[('Telefon 1 ASP', p['Nummer MST/STST'])] = p['Telefon']
@@ -128,13 +132,24 @@ class ExcelHandler():
 			outData[('Steuermodul', p['Nummer MST/STST'])] = p['Steuermodul']
 			outData[('Sollwertgeber', p['Nummer MST/STST'])] = p['Sollwertgeber']
 			outData[('Steuerung Infos', p['Nummer MST/STST'])] = p['technische Hinweise Steuerstelle']
+			
+			if p['Auftrag Messstelle'] != 0:
+				outData[('Messstelle', p['Nummer MST/STST'])] = "X"
+			else:
+				outData[('Messstelle', p['Nummer MST/STST'])] = ""
+				
+			if p['Auftrag Steuerstelle'] != 0:
+				outData[('Steuerstelle', p['Nummer MST/STST'])] = "X"
+			else:
+				outData[('Steuerstelle', p['Nummer MST/STST'])] = ""
+		
 		
 		#Add dbDaten
 		for lOuter in dbData:
 			for lInner in lOuter:
 				outData[('Name', lInner[1])] = lInner[0]
-				outData[('Messstelle', lInner[1])] = lInner[1]
-				outData[('Steuerstelle', lInner[1])] = lInner[2]
+				#outData[('Messstelle', lInner[1])] = lInner[1]
+				#outData[('Steuerstelle', lInner[1])] = lInner[2]
 				outData[('Komplex', lInner[1])] = lInner[3]
 				outData[('Kunde', lInner[1])] = lInner[4]
 				outData[('PLZ', lInner[1])] = lInner[5]
@@ -196,7 +211,11 @@ class ExcelHandler():
 			i_col = 1
 			i_row +=1
 			
-		outWb.save(filename=outPath)
+		try:
+			outWb.save(filename=outPath)
+		except:
+			print(outPath + " must be closed!")
+			return
 		
 		print("Data sucessfully written to " + outPath)
 		
