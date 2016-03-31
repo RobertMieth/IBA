@@ -2,6 +2,7 @@
 
 
 import tkinter as tk
+from tkinter.filedialog import askopenfilename
 from PIL import Image, ImageTk
 
 import openpyxl as pxl
@@ -477,7 +478,9 @@ class IbaTK(tk.Frame):
 		settings.columnconfigure(0, pad = 10)
 		settings.rowconfigure(3, pad = 10)
 		
-		excelPathFrame = tk.Frame(settings, relief='groove', borderwidth=2, width = 450, height = 40)
+		frameWidth = 550
+		
+		excelPathFrame = tk.Frame(settings, relief='groove', borderwidth=2, width = frameWidth, height = 40)
 		excelPathFrame.grid(row=1, column=1, padx=10, pady=5, columnspan=2)
 		excelPathFrame.grid_propagate(False)
 		excelPathFrame.columnconfigure(2, weight=10)
@@ -488,8 +491,10 @@ class IbaTK(tk.Frame):
 		input.config(width=380)
 		self.pfadEntry = input #External Reference
 		input.insert(0,myConfig.get('outputExcel'))
+		browseBtn = tk.Button(excelPathFrame, text="Suchen", command = self.browse_for_file, height=1, width=5)
+		browseBtn.grid(column=3, row = 1, padx=5, sticky = "w")
 		
-		gsNameFrame = tk.Frame(settings, relief='groove', borderwidth=2, width = 450, height = 40)
+		gsNameFrame = tk.Frame(settings, relief='groove', borderwidth=2, width = frameWidth, height = 40)
 		gsNameFrame.grid(row=2, column=1, padx=10, pady=5, columnspan=2)
 		gsNameFrame.grid_propagate(False)
 		gsNameFrame.columnconfigure(2, weight=10)
@@ -506,6 +511,11 @@ class IbaTK(tk.Frame):
 		
 		saveBtn = tk.Button(settings, text="Abbrechen", command = settings.destroy, height=1, width=15)
 		saveBtn.grid(column=2, row = 3, padx=10, sticky = "nw")
+	
+	def browse_for_file(self):
+		file = askopenfilename(filetypes =(("Excel File", "*.xlsm"),("All Files","*.*")),title = "Datei wählen.")
+		self.pfadEntry.delete(0,'end')
+		self.pfadEntry.insert(0,file)
 	
 	def save_settings(self):
 		newPath = self.pfadEntry.get()
