@@ -475,7 +475,7 @@ class IbaTK(tk.Frame):
 		
 		settings.columnconfigure(1, pad = 10)
 		settings.columnconfigure(0, pad = 10)
-		settings.rowconfigure(2, pad = 10)
+		settings.rowconfigure(3, pad = 10)
 		
 		excelPathFrame = tk.Frame(settings, relief='groove', borderwidth=2, width = 450, height = 40)
 		excelPathFrame.grid(row=1, column=1, padx=10, pady=5, columnspan=2)
@@ -489,15 +489,31 @@ class IbaTK(tk.Frame):
 		self.pfadEntry = input #External Reference
 		input.insert(0,myConfig.get('outputExcel'))
 		
+		gsNameFrame = tk.Frame(settings, relief='groove', borderwidth=2, width = 450, height = 40)
+		gsNameFrame.grid(row=2, column=1, padx=10, pady=5, columnspan=2)
+		gsNameFrame.grid_propagate(False)
+		gsNameFrame.columnconfigure(2, weight=10)
+		info2 = tk.Label(gsNameFrame, text="Name\n Google-Spread")
+		info2.grid(column=1, row = 1)
+		input2 = tk.Entry(gsNameFrame, relief='sunken')
+		input2.grid(column=2, row = 1, sticky='w', pady=5, padx=10)
+		input2.config(width=380)
+		self.gsNameEntry = input2 #External Reference
+		input2.insert(0,myConfig.get('planungSpread'))
+		
 		saveBtn = tk.Button(settings, text="Speichern", command = self.save_settings, height=1, width=15)
-		saveBtn.grid(column=1, row = 2, padx=10, sticky = "nw")
+		saveBtn.grid(column=1, row = 3, padx=10, sticky = "nw")
 		
 		saveBtn = tk.Button(settings, text="Abbrechen", command = settings.destroy, height=1, width=15)
-		saveBtn.grid(column=2, row = 2, padx=10, sticky = "nw")
+		saveBtn.grid(column=2, row = 3, padx=10, sticky = "nw")
 	
 	def save_settings(self):
 		newPath = self.pfadEntry.get()
 		myConfig.update('outputExcel', newPath)
+	
+		newName = self.gsNameEntry.get()
+		myConfig.update('planungSpread', newName)
+		
 		self.topSet.destroy()
 	
 	def help_me(self):

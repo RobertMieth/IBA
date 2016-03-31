@@ -1,0 +1,13 @@
+V2.0beta - Release on 2016-03-30
+********************************
+- Test erfolgreich
+- Einschränkungen:
+	- Kein Abruf der ZFA Nummer (noch in VNB Excel)
+	- Kein Abruf zu Detailinformationen zur Steuerstelle (Adresse Steuerstelle = Adresse Messtelle + Infos in StSt Excel)
+	- Anzahl der bisherigen Anfahrten wird noch über "Excel-Trick" gelöst
+	- Noch kein Abruf der bereits installierten Hardware
+- User-Kommentare:
+
+
+*******************************
+*******************************
