@@ -14,12 +14,14 @@ from oauth2client.file import Storage
 import argparse
 
 import gspread
-import json
 
 from dateutil import parser
 import datetime
 
 import webbrowser as browser
+
+import myConfig
+
 
 #Object that can obtain and save data from google Spreadsheets
 class GoogleGrabber():
@@ -32,16 +34,13 @@ class GoogleGrabber():
 		self.scope = 'https://spreadsheets.google.com/feeds https://docs.google.com/feeds'
 		self.credentials = self.storage.get()
 		
-		self.sysJson = open("system\sysdata.json")
-		self.sysData = json.load(self.sysJson)
-		
 		#Data Storage
 		self.session_planungsdaten = []
 		
 	
 	def get_planungsdaten(self):
 		self.get_credentials()
-		gSheet = self.sysData["planungSpread"]
+		gSheet = myConfig.get('planungSpread')
 		
 		GSpread = gspread.authorize(self.credentials)
 		act_sh = GSpread.open(gSheet)
@@ -90,14 +89,12 @@ class GoogleGrabber():
 #Read and write Data from Excel files
 class ExcelHandler():
 	def __init__(self):
-		self.sysJson = open("system\sysdata.json", 'r')
-		self.sysData = json.load(self.sysJson)
 		
 		self.outDatenfelder = ('Bezeichner', 'Name', 'Messstelle', 'Steuerstelle', 'Komplex', 'Kunde', 'Datum', 'Uhrzeit', 'Umfang Messst.', 'Umfang SSt.', 'Installationspartner', 'PLZ', 'Ort', 'Straße', 'HNr', 'Anfahrtsinfo', 'Anlagentyp', 'Ansprechpartner vor Ort', 'Telefon 1 ASP', 'Telefon 2 ASP', 'Anprechpartner Vertraglich', 'Verteilnetzbetreiber', 'Kontakt VNB', 'Zählpunkt', 'PLZ Messstelle', 'Ort Messstelle', 'Straße Messstelle', 'HNr. Messstelle', 'Position Zähler', 'Gerätenummer', 'MSBA', 'Kontakt MSBA', 'Ausbau durch', 'Wandlerfaktor', 'Spannung ungewandelt', 'Spannung gewandelt', 'Strom ungewandelt', 'Strom gewandelt', 'Typenschlüssel', 'Nennspannung', 'Nennstrom', 'Genauigkeit', 'Leistungsbegrenzung', 'Hilfsspannung', 'Impulsausgang', 'Modem Typ', 'Modem Info', 'Technische Hinweise', 'PLZ Steuerstelle', 'Ort Steuerstelle', 'Straße Steuerstelle', 'HNr. Steuerstelle', 'Position Steuerung', 'Fernwirktechnik', 'Steuermodul', 'Sollwertgeber', 'Steuerung Infos')
 		
 	
 	def write_planungsdaten2excel(self, dbData, planungData):
-		outPath = "2016-03-23_Datenfelder_Installationsbeleg_ReleaseV2.0.xlsm"
+		outPath = myConfig.get('outputExcel')
 		try:
 			outWb = pxl.load_workbook(filename=outPath, keep_vba = True)
 		except:
@@ -234,14 +231,7 @@ class ExcelHandler():
 				
 		return dict(zip(range1List,range2List))
 	
-		
-		
-	#def update_sysdata(self, param, new_value):
-	#	self.sysData[param] = new_value
-	#	with open("system\sysdata2.json", 'w') as f:
-	#		json.dump(self.sysData, f)	
-
-		
+	
 class DbHandler():
 
 	def __init__(self):
@@ -314,6 +304,7 @@ class DbHandler():
 		self.cursor.execute(query, [ms_in])
 		return self.cursor.fetchall()
 		
+
 #GUI App
 class IbaTK(tk.Frame):
 	
@@ -322,11 +313,7 @@ class IbaTK(tk.Frame):
 		self.parent = parent
 		self.version = "(C) Solandeo - Version 2016-02-16.2.0a"
 		
-		sysJson = open("system\sysdata.json",'r')
-		self.sysData = json.load(sysJson)
-		
 		self.build()	
-		
 		self.dbColor('yellow')
 		try: 
 			self.db = DbHandler()
@@ -354,7 +341,7 @@ class IbaTK(tk.Frame):
 		self.parent.config(menu=menubar)
 		
 		sysMenu = tk.Menu(self.parent)
-		sysMenu.add_command(label="Einstellungen", command=self.find_path)
+		sysMenu.add_command(label="Einstellungen", command=self.settings)
 		menubar.add_cascade(label="System", menu=sysMenu)
 		
 		helpMenu = tk.Menu(self.parent)
@@ -475,10 +462,44 @@ class IbaTK(tk.Frame):
 		self.excelColor('green')
 
 		
-	def find_path(self):
-		print("This function does not exist yet")
+	def settings(self):
+		self.build_settings()
 		
+	
+	def build_settings(self):
+		settings = tk.Toplevel()
+		settings.title("Einstellungen")
+		#settings.geometry("500x150+300+300")
+		settings.resizable(width=False, height=False)
+		self.topSet = settings #external Reference
 		
+		settings.columnconfigure(1, pad = 10)
+		settings.columnconfigure(0, pad = 10)
+		settings.rowconfigure(2, pad = 10)
+		
+		excelPathFrame = tk.Frame(settings, relief='groove', borderwidth=2, width = 450, height = 40)
+		excelPathFrame.grid(row=1, column=1, padx=10, pady=5, columnspan=2)
+		excelPathFrame.grid_propagate(False)
+		excelPathFrame.columnconfigure(2, weight=10)
+		info = tk.Label(excelPathFrame, text="Pfad für\n Excel-Output")
+		info.grid(column=1, row = 1)
+		input = tk.Entry(excelPathFrame, relief='sunken')
+		input.grid(column=2, row = 1, sticky='w', pady=5, padx=10)
+		input.config(width=380)
+		self.pfadEntry = input #External Reference
+		input.insert(0,myConfig.get('outputExcel'))
+		
+		saveBtn = tk.Button(settings, text="Speichern", command = self.save_settings, height=1, width=15)
+		saveBtn.grid(column=1, row = 2, padx=10, sticky = "nw")
+		
+		saveBtn = tk.Button(settings, text="Abbrechen", command = settings.destroy, height=1, width=15)
+		saveBtn.grid(column=2, row = 2, padx=10, sticky = "nw")
+	
+	def save_settings(self):
+		newPath = self.pfadEntry.get()
+		myConfig.update('outputExcel', newPath)
+		self.topSet.destroy()
+	
 	def help_me(self):
 		url = 'https://wiki.solandeo.com/iba'
 		browser.open(url, new=2)
